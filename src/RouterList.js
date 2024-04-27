@@ -1,12 +1,8 @@
-import {
-    Routes,
-    Route,
-    Navigate
-  } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
   import DogList from './DogList';
   import FilterDogDetails from './FilterDogDetails';
   
-  function RouteList({dogs}) {
+  const RouteList = ({dogs}) => {
     return (
       <Routes>
         <Route path="/dogs" element={<DogList dogs={dogs} />} />
